@@ -1,0 +1,28 @@
+#container{
+	margin-top: 50px;
+}
+
+.Absolute-Center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  .Absolute-Center.is-Responsive {
+	width: 50%; 
+	height: 50%;
+	min-width: 200px;
+	max-width: 400px;
+	padding: 40px;
+  }
+
+  	.modal-content{
+		background-color:blue;
+	}
+	.btn-link{
+		color:firebrick;
+	}
+	.modal-heading h2{
+		color:#ffffff;
+	}
+  

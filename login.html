@@ -1,0 +1,73 @@
+<!--
+<?php
+    session_start();
+    echo isset($_SESSION['login']);
+    if(isset($_SESSION['login'])) {
+      header('LOCATION:index.php'); die();
+    }
+?>
+  -->
+<!DOCTYPE html>
+<html>
+    <header>
+            <link href="css/logostyle.css" rel="stylesheet" type="text/css"> 
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+    </header>
+    <body>
+            <div id="container">
+                    <img src="https://s3.us-east-2.amazonaws.com/noccaphoto/logo.png" alt="..." class="img-responsive center-block" width="270" height="148" />
+                    <div class="modal-dialog"> 
+                      <div class="modal-content" style="background: darkcyan;">
+                        <div class="modal-heading">
+                          <h2 class="text-center">Login</h2>
+                        </div>
+                        <?php
+                       if(isset($_POST['submit'])){
+                        global $result; 
+                         $username = $_POST['username']; $password = $_POST['password'];
+                             if($username === 'admin' && $password === 'password'){
+                                $_SESSION['login'] = true; header('LOCATION:admin.php'); die();
+                            } {
+                              echo "<div class='alert alert-danger'>Username and Password do not match.</div>";
+                               }
+                              }
+                             ?>
+                        <div class="modal-body">
+                          <form name="input" action="" method="post" >
+                            <div class="form-group">
+                      
+                              <div class="input-group">
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-user" style="margin-left:-6px;"></span>
+                                </span>
+                                <input type="text"  class="form-control" placeholder="User Name" id="username" name="username" style="font-size:20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="input-group">
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-lock" style="margin-left:-6px;"></span>
+                                </span>
+                                <input type="password"   class="form-control" placeholder="Password" id="pwd" name="password" style="font-size:20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" />
+                    
+                              </div>
+                    
+                            </div>
+                
+                            <div class="form-group text-center">
+                              <button type="submit"  name="submit"  class="btn btn-success btn-lg" style="width:100px;font-size:20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Login</button>
+                            </div>
+                    
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+    </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </html>
