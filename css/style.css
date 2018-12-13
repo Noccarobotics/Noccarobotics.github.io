@@ -464,7 +464,7 @@ a.read_more2:hover {
     margin:10px;
 }
 .container p::first-letter {
-    font-size: 150%;
+    font-size: 100%;
 }
 
 
