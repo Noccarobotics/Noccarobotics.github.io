@@ -25,4 +25,11 @@
 	.modal-heading h2{
 		color:#ffffff;
 	}
+
+@media (max-width: 480px){ 
+   
+.container{
+	font-size:22px;
+}
   
+}
