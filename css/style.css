@@ -50,14 +50,6 @@ a, a:hover, a:active {
 
 *{box-sizing: border-box;}
 
-.js div#preloader { position: fixed;
-     left: 0; 
-     top: 0;
-     z-index: 999;
-     width: 100%; 
-     height: 100%;
-     overflow: visible;
-     background:#4a484b  url('../img/preloade67r.gif') no-repeat center center; }
 
 
 /* Styles
@@ -102,8 +94,13 @@ p {
     line-height: 24px;
     margin: 0;
 }
-
   
+.patent {
+    text-align: right;
+    margin-top: -6em;
+    font-style: inherit;
+}
+
 /* Header Styles
 ---------------------------------*/
 
@@ -271,21 +268,18 @@ p {
 .header-content{
     z-index: 2;
    
-   
+
     }
     
  .header-content h1{
-    font-size: 50px;
-    float: left;
-    position: relative;
-    margin-top:8em;
+    font-size: 55px;
     margin-bottom: 0;
+    margin-top: 0
     
     }
-    .header-content img{
-        height:146px;
-        margin-left: 90%;
-
+    .header-content p{
+    font-size: 5rem;
+    display: block;
     }
     /*
     @media screen and (max-width: 768px) {
@@ -352,23 +346,23 @@ opacity: 0.80;
 */
 
 .hero_section {
+    
     position: relative;
     color: white;
     font-family: sans-serif;
     opacity: 0.9;
-    background-color:#dac08b"
+  
 }
+#hero_section{
+ background:url("../img/robotimg1.jpg");
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ margin:auto;
+ padding:0;
+} 
 
-#hero_section .contents {
-    padding: 350px 0 130px;
-  }
 
-  #hero_section .contents h1 {
-    color: #fff;
-    font-size: 4vW;
-    font-weight: 700;
-   
-  }
 .hero_section h4{
     font-size: 5vw;
     font-weight: 900;
@@ -391,24 +385,24 @@ opacity: 0.80;
 }
 
 .top_left_cont {
-    padding: 110px 0;
+    padding: 0;
 }
 
 .top_left_cont h3 {
     font-size: 16px;
     color: #f56eab;
     margin: 0 0 20px 0;
-    text-align: left;
+    text-align: right;
     font-weight: 700;
 }
 
-.top_left_cont h2 {
-    font-size: 40px;
+#hero_section h2 {
+    font-size: 30px;
     color: #FFF;
-    line-height: 52px;
-    margin: 0 0 26px 0;
+    padding: 230px;
+    margin: 20px;
     font-family: 'Poppins', sans-serif;
-    text-align: left;
+    text-align: right;
 }
 
 .top_left_cont h2 strong {
@@ -464,9 +458,8 @@ a.read_more2:hover {
     margin:10px;
 }
 .container p::first-letter {
-    font-size: 100%;
+    font-size: 150%;
 }
-
 
 	
 
@@ -836,7 +829,7 @@ img {
 }
 
 .inner_wrapper h3{
-    margin-top: 2px;
+    margin-top: 5px;
 
 }
 .carousel-inner{
@@ -1828,15 +1821,19 @@ div.mc-image {
 
 
 @media only screen and (min-width:1500px){
+    #hero_section h2 {
+        font-size: 30px;
+        color: #FFF;
+        padding: 500px;
+        margin: 20px;
+        font-family: 'Poppins', sans-serif;
+        text-align: right;
+    }
 
   .header-content h1 {
     position:relative;
     margin-top: 13em;
   }
-  .header-content img{
-    margin-left: 90%;
-
-}
   .service_icon  img{
     height: 180px;
     
@@ -1847,17 +1844,12 @@ div.mc-image {
   }
 
   }
-
-
-
-@media only screen and (max-width:768px){
+@media only screen and (max-width:420px){
     .header-content h1 {
-        position: relative;
-        font-size: 18px;
+        position:relative;
+        margin-top: 17em;
+        font-size: 20px;
         text-align: center;
-        margin-top:10em;
-
-        
       } 
       .service_block h3 {
         font-family: 'Muli';
@@ -1871,28 +1863,18 @@ div.mc-image {
        
 
     }
-    .page_section{
-        font-size: 4.5px;
+    #hero_section h2 {
+        font-size: 10px;
+        color: #FFF;
+        padding: 30px;
+        margin: 0px;
+        font-family: 'Poppins', sans-serif;
+        text-align: right;
     }
-    .top_cont_outer {
-           height: 50vh;
-           background: url("../img/hero2.jpg") no-repeat center center;
-           background-size: cover;
-           }
-        video {
-          display:none;
-        }
-        .header-content img{
-            height: 116.8px;
-            margin-left: 70%;
-    
-        }
+
+
 }
-
-
-
-
-@media only screen and (max-width:1024px){
+@media (max-width: 768px) {
 p{
 font-size:20px;
 }
