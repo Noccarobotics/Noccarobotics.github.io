@@ -247,7 +247,7 @@ h2 {
     }
    
 #hero_section{
-    background:url("../img/image\ 1\ final.jpg");
+    background:url("../img1/image\ 1\ final.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1823,7 +1823,41 @@ div.mc-image {
     }
     
 
-}
+}@media only screen and (min-width: 480px) and (max-width: 640px){
+
+    #hero_section  {
+        height: 72vh;
+     }
+     .item {
+         color:white;
+         top:40%;
+         left:15%;
+         position: absolute;
+         background-color:transparent;
+         align-items: center;
+     }
+     .h1{
+         color:white;
+         font-weight: bold;
+         font-size: 3rem
+     }
+     .item1 {
+         color:white;
+         top:47%;
+         left:18%;
+         position: absolute;
+         background-color:transparent;
+         align-content: center;
+     }
+     .itemfont{
+        color:black;
+         font-weight: bold;
+         font-size:2rem;
+     }
+     
+} 
+
+
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px) 
