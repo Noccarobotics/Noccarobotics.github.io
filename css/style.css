@@ -519,6 +519,9 @@ h2 {
 .container p::first-letter {
     font-size: 150%;
 }
+.first-letter{
+    font-size: 150%;
+}
 
 /* Services
 ---------------------------------*/
@@ -3101,6 +3104,10 @@ div.mc-image {
             font-size: 1.8vw;
     
         }
+        #Portfolio h2{
+            color:snow;
+        }
+  
         
     
   }
@@ -3160,6 +3167,9 @@ div.mc-image {
             color:snow;
             font-size: 3vw;
     
+        }
+        #Portfolio h2{
+            color:snow;
         }
   
     
